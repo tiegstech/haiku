@@ -1,16 +1,12 @@
-//explain how you borrorwed code, name the places and how iused chhattgbt to debug 
-
 // This p5.js sketch utilizes participants responses from a questionnaire to explore thoughts of "safety" around the time of winter solstice period. This sketch was designed with aims to focus on amplifying and uplifting the voices of women, LGBTQ+, POC and other marginalized communities by showcasing their thoughts of what brings safety to them during winter solstice in the form of a interactive generative haiku poem.
-// created by Tiegan Carter-Edwards
-
+// I was inspired to do a haiku after my feminist coding practices class. I was inspired by generative poetry from Dr. Soon's adaption of the House of Dust code (Soon, 2022). Other code of generativity was inspired and learnt by fellow p5 coders as well as  (see refrences)
 // The array below stores my sound files. The sounds are responses from participants answers: Sea,Fireplace,Nature and the sound of friends.
 let sounds = [];
 let totalSounds = 4; // number of sound files
 let currentSound; // I use this to store the index of which sound is currently playing. This is to ensure my sounds don't overlap
 let isPlaying = false; // with the above comment in mind, this line is used to as a flag to indicate whether a sound is currently playing
 let font;
-
-// in line 11, I create an array of emojis. These emojis are participants responses to the question: "Is there any emojis/symbols that reflects your thoughts about the feeling/concept of the word "safe"." In line with feminist Principles, I did not want to edit or minimise marginalised communities by getting rid of duplicate responses but to instead ensure representation.
+// in the line below, I create an array of emojis. These emojis are participants responses to the question: "Is there any emojis/symbols that reflects your thoughts about the feeling/concept of the word "safe"." In line with feminist Principles, I did not want to edit or minimise marginalised communities by getting rid of duplicate responses but to instead ensure representation.
 let Emojis = ['🥰', '🥰', '🤗', '😌', '😴', '😴', '😊', '🤝', '🫶🏻','🙏','🤞','🫂','🫂','🌅','🌆','🛌','🛌','🌱','🌲','🌲','🧣','🎧','🥽','❤️','❤️','💙','❤️‍🩹','☮️','☀️','🍫','☕️','🍲','🧸','🧘‍','🧘‍♀️','🔐','🕯️','🐶','🐶','🍂','🍁','🍁','🏠','🏡',' 🏡','🏡'];
 let fallingEmojis = []; // This array stores the instances of the FallingEmojis class.
 let responses = ["alone","bed","besties","bright","calm","clear","comfort","cozy","dog","friends","friendship","hug","hugs","home","home","home","interesting","indoors","keep","love","me","peace","ror","snug","secure","still","stillness","warm","warm","warm","warm","warm","warm","warm","warm","warm","warm","warm","warm","warm","warm","warm","warmth","warmth","you", "me","safe","self","lay","trust", "nest","rest","peace"]; //this array stores different response strings to the question asked- what words resonate the feeling of being "safe".In line with a traditional Haiku, it was prefrenced that responses were in a one syllable format. However as you may see some are two syllable or more. I purposely left these in because as I don’t want to silence people or adapt the words of marginalized communities.
@@ -143,4 +139,12 @@ function windowResized() {
 
 // References :
 
-// Soon, W (2022) simple_houseofDust  [p5.js Javascript]. Available at: https://editor.p5js.org/siusoon/sketches/sEjio7jTj  (Accessed: 20th December, 2023). 
+// Soon, W (2022) simple_houseofDust  [p5.js Javascript]. Available at: https://editor.p5js.org/siusoon/sketches/sEjio7jTj  (Accessed: 20th December, 2023).
+// 2sman (no date) play sound samples randomly, P5.js web editor. Available at: https://editor.p5js.org/2sman/sketches/cAZE27bk4 (Accessed: 20 December 2023). 
+// Meadows, I. (no date) changing background color (greyscale), P5.js web editor. Available at: https://editor.p5js.org/ivymeadows/sketches/HJ-4kQliZ (Accessed: 20 January 2023). 
+// fauthereea (no date) Falling Letters- Level 1, P5.js web editor. Available at: https://editor.p5js.org/fauthereea/sketches/Nce8NkMVV (Accessed: 20 December 2023). 
+// JustLearningToCode (2022) Writing a ball fall sketch in p5js, YouTube. Available at: https://www.youtube.com/watch?v=DYb5TfN880I (Accessed: 20 December 2023). 
+// p5js (no date) LoadFont, reference | p5.js. Available at: https://p5js.org/reference/#/p5/loadFont (Accessed: 20 December 2023). 
+// p5.js (no date) WindowWidth, reference | p5.js. Available at: https://p5js.org/reference/#/p5/windowWidth (Accessed: 20 December 2023). 
+// p5.js (no date) fullscreen, reference | p5.js. Available at: https://p5js.org/reference/#/p5/fullscreen (Accessed: 20 December 2023). 
+// for debugging: OpenAI (2022). ChatGPT. Available at: https://chat.openai.com/ (Accessed: 20 December 2023).
