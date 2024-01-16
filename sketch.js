@@ -38,7 +38,7 @@ function setup() {
   textAlign(CENTER);
   textSize(24);
   setInterval(makeEmojis, 1000);
-} // within my setup(), It's initializes the canvas, window width is numeric variable that stores the width of the browser's layout viewport. it also sets up to play a random sound, text alignment, text size, and starts a timer to create falling letters every second.
+} // within my setup(), It's initializes the canvas, window width is numeric variable that stores the width of the browser's layout viewport. it also sets up to play a random sound, text alignment, text size, and starts a timer to create falling emojis every second.
 
 function draw() {
   background(colors[currentColorIndex]);
